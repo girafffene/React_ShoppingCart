@@ -1,10 +1,13 @@
 import React from "react"
 import "../styles/App.css"
+import Products from "./products"
+import Cart from "./cart"
 
 export default props => {
   return (
     <div>
-      <h1>Hello World</h1>
+      <Products />
+      <Cart />
     </div>
   )
 }
