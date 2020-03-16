@@ -1,11 +1,11 @@
 import React from "react"
-import "../styles/App.css"
-import Products from "./products"
-import Cart from "./cart"
+
+import Products from "./Products"
+import Cart from "./Cart"
 
 export default props => {
   return (
-    <div>
+    <div className="wrapper">
       <Products />
       <Cart />
     </div>

@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.cart {
+  background-color: rgb(27, 26, 32);
+}
+
+.addedCartItem {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(49, 63, 78);
+}
+
+.itemTitle {
+  color: white;
+}
+
+.removeButton {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  bottom: 220px;
+  left: 150px;
+}

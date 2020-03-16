@@ -33,6 +33,7 @@ function getProducts() {
   }
 }
 
+// 6. custom hook
 export function useProducts() {
   const dispatch = useDispatch()
   const products = useSelector(appState => appState.productState.products)
@@ -41,20 +42,5 @@ export function useProducts() {
     dispatch(getProducts())
   }, [dispatch])
 
-  return {}
+  return { products }
 }
-
-// // 6. custom hook
-// export function useExample() {
-//   const dispatch = useDispatch()
-//   const example = useSelector(appState => appState.exampleState.example)
-
-//   const syncaction = dispatch(someSyncAction())
-//   const asyncaction = dispatch(someAsyncAction())
-
-//   useEffect(() => {
-//     console.log("mounting component")
-//   }, [])
-
-//   return { example, syncaction, asyncaction }
-// }
